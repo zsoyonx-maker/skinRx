@@ -11,25 +11,15 @@
     <body>
         <nav id="gnb">
             <div class="container gnb_inner">
-                <h6>
-                    <a href="#">즐겨찾기</a><span class="ir_pm">별아이콘</span>
-                </h6>
+                <h6><a href="#">즐겨찾기</a><span class="ir_pm">별아이콘</span></h6>
                 <h2 class="ir_so">유틸리티 메뉴</h2>
                 <ul>
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
-                    <li>
-                        <a href="#">MY</a><span class="ir_pm">하트아이콘</span>
-                    </li>
-                    <li>
-                        <a href="#">MY SKINRx</a
-                        ><span class="ir_pm">다운아이콘</span>
-                    </li>
+                    <li><a href="#">MY</a><span class="ir_pm">하트아이콘</span></li>
+                    <li><a href="#">MY SKINRx</a><span class="ir_pm">다운아이콘</span></li>
                     <li><a href="#">주문배송</a></li>
-                    <li>
-                        <a href="#">장바구니</a
-                        ><span class="ir_pm">장바구니아이콘</span>
-                    </li>
+                    <li><a href="#">장바구니</a><span class="ir_pm">장바구니아이콘</span></li>
                     <li><a href="#">고객센터</a></li>
                 </ul>
             </div>
@@ -49,11 +39,7 @@
                     </h1>
                     <form class="search_box" role="search">
                         <label for="searchInput" class="ir_so">상품검색</label>
-                        <input
-                            type="text"
-                            id="searchInput"
-                            placeholder="인바디, 이제 집에서 하세요!"
-                        />
+                        <input type="text" id="searchInput" placeholder="인바디, 이제 집에서 하세요!" />
                         <button type="submit">
                             <span class="ir_so">버튼</span>
                         </button>
@@ -63,10 +49,156 @@
         </header>
         <!-- //header -->
 
-        <nav id="nav">nav</nav>
+        <nav id="nav" aria-label="상품 카테고리">
+            <div class="container">
+                <ul>
+                    <li><a href="#" title="BY BRAND">BY BRAND</a></li>
+                    <li><a href="#" title="SKIN CARE">SKIN CARE</a></li>
+                    <li><a href="#" title="BODY&HAIR">BODY &amp; HAIR</a></li>
+                    <li><a href="#" title="MAKE UP">MAKE UP</a></li>
+                    <li><a href="#" title="HEALTH BEAUTY">HEALTH BEAUTY</a></li>
+                    <li><a href="#" title="FRAGRANCE">FRAGRANCE</a></li>
+                    <li><a href="#" title="MEN">MEN</a></li>
+                    <li><a href="#" title="MOM&BABY">MOM &amp; BABY</a></li>
+                </ul>
+            </div>
+        </nav>
         <!-- //nav -->
 
-        <main id="main">main</main>
+        <main id="main">
+            <div class="container">
+                <section class="main_banner" aria-label="메인 프로모션 배너">
+                    <h2 class="ir_so">메인 배너</h2>
+                    <div class="rolling_banner">
+                        <img src="img/main_roll01.png" alt="LOTUS이미지" />
+                    </div>
+                    <div class="feature_item">
+                        <figcaption>feature item</figcaption>
+                        <figure class="feature_img">
+                            <a href="#"><img src="img/feature_item.png" alt="" /></a>
+                        </figure>
+                        <div class="item_txt">
+                            <ul>
+                                <li>Royal Apothic</li>
+                                <li>로얄아포틱 홀랜드파크 핸드크림 로얄아포틱 홀랜드파크 핸드크림</li>
+                                <li>
+                                    <span class="money">19,200</span>
+                                    <span class="cancel">23,750</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main_event">
+                        <span class="ir_so">메인 이벤트</span>
+                    </div>
+                </section>
+                <!-- //main_banner -->
+
+                <section class="special_picks" aria-label="스페셜 상품">
+                    <div class="title">
+                        <h2>SPECIAL PICKS</h2>
+                    </div>
+                    <div class="pick_menu">
+                        <ul>
+                            <li>
+                                <a href="#">NOW ON SKINRx<span class="triangle"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">HOT ISSUE ITEM<span class="triangle"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">SEASON HOT<span class="triangle"></span></a>
+                            </li>
+                            <li>
+                                <a href="#">SPECIAL PRICE<span class="triangle"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pick_box">
+                        <div class="pick">
+                            <div class="pick_img"><img src="img/spe_product01.png" alt="" /></div>
+                            <div class="pick_icon ir_pm">단독</div>
+                            <div class="item_txt">
+                                <ul>
+                                    <li>Royal Apothic</li>
+                                    <li>로얄아포틱 홀랜드파크 핸드크림 로얄아포틱 홀랜드파크 핸드크림</li>
+                                    <li>
+                                        <span class="money">19,200</span>
+                                        <span class="cancel">23,750</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pick">
+                            <div class="pick_img"><img src="img/spe_product02.png" alt="" /></div>
+                            <div class="pick_icon ir_pm icon02">무료배송</div>
+                            <div class="item_txt">
+                                <ul>
+                                    <li>Royal Apothic</li>
+                                    <li>로얄아포틱 홀랜드파크 핸드크림 로얄아포틱 홀랜드파크 핸드크림</li>
+                                    <li>
+                                        <span class="money">19,200</span>
+                                        <span class="cancel">23,750</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pick">
+                            <div class="pick_img"><img src="img/spe_product03.png" alt="" /></div>
+                            <div class="pick_icon ir_pm">단독</div>
+                            <div class="item_txt">
+                                <ul>
+                                    <li>Royal Apothic</li>
+                                    <li>로얄아포틱 홀랜드파크 핸드크림 로얄아포틱 홀랜드파크 핸드크림</li>
+                                    <li>
+                                        <span class="money">19,200</span>
+                                        <span class="cancel">23,750</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pick">
+                            <div class="pick_img"><img src="img/spe_product04.png" alt="" /></div>
+                            <div class="pick_icon ir_pm icon04">쿠폰</div>
+                            <div class="item_txt">
+                                <ul>
+                                    <li>Royal Apothic</li>
+                                    <li>로얄아포틱 홀랜드파크 핸드크림 로얄아포틱 홀랜드파크 핸드크림</li>
+                                    <li>
+                                        <span class="money">19,200</span>
+                                        <span class="cancel">23,750</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //special_picks -->
+
+                <section class="magazine" aria-label="매거진">
+                    <img src="img/magazine.png" alt="매거진이미지" />
+                </section>
+                <!-- //magazine -->
+                <section class="brand_focus" aria-label="브랜드포커스">
+                    <div class="title">
+                        <h2>BRAND FOCUS</h2>
+                    </div>
+                    <div class="brand_product">
+                        <div class="brand_product01"><img src="img/brand_product01.png" alt="" /></div>
+                        <div class="brand_product02"><img src="img/brand_product02.png" alt="" /></div>
+                        <div class="brand_product03"><img src="img/brand_product03.png" alt="" /></div>
+                    </div>
+                </section>
+                <!-- //brand_focus -->
+
+                <section class="best_beauty" aria-label="베스트뷰티">
+                    <div class="title">
+                        <h2>BEST BRAND&#180;S IT BEAUTY</h2>
+                    </div>
+                </section>
+                <!-- //best_beauty -->
+            </div>
+        </main>
         <!-- //main -->
 
         <footer id="footer">footer</footer>

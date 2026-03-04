@@ -41,10 +41,10 @@
     display: flex;
 }
 #gnb ul li {
+    padding: 0 9px;
 }
 #gnb ul li a {
     font-size: 0.85em;
-    padding: 0 9px;
     color: #fff;
 }
 #gnb ul li a:hover {
@@ -71,6 +71,7 @@
     height: 10px;
     display: inline-block;
     background: url(../img/icons.png) 0 0;
+    margin-left: 5px;
 }
 #gnb ul li:nth-child(3) span {
     background-position: -299px 2px;
@@ -104,7 +105,7 @@ ul.menu li a {
     position: relative;
 }
 ul.menu li a:hover {
-    color: #faf600;
+    color: #6c0075;
 }
 ul.menu li:first-child a {
     padding-left: 0;
@@ -151,4 +152,199 @@ h1.logo a span {
     height: 36px;
     background: url(../img/lip.png) no-repeat center;
     background-size: 80%;
+    cursor: pointer;
+}
+
+/* nav */
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+    /* height: 56px;
+    align-items: center; */
+    border-top: 5px solid #000;
+}
+#nav ul li {
+}
+#nav ul li a {
+    display: block;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 18px 0;
+    color: #000;
+}
+#nav ul li a:hover {
+    color: #6c0075;
+}
+
+/************** main *************/
+
+/* main_banner */
+.main_banner {
+    display: grid;
+    grid-template-columns: 624px 304px;
+    grid-template-rows: 304px 136px;
+    grid-template-areas:
+        "rolling feature"
+        "rolling event";
+    gap: 16px;
+}
+.rolling_banner {
+    grid-area: rolling;
+}
+.feature_item {
+    grid-area: feature;
+    border: 1px solid #c4c4c4;
+}
+.main_event {
+    grid-area: event;
+    background: url(../img/main_event.png);
+}
+
+.feature_item figcaption {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    padding-top: 10px;
+}
+.feature_item figure.feature_img {
+    text-align: center;
+}
+
+/* item_txt */
+.item_txt {
+}
+.item_txt ul {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.item_txt ul li {
+    margin-top: 3px;
+}
+.item_txt ul li:first-child {
+    font-weight: 800;
+    color: #191919;
+}
+.item_txt ul li:nth-child(2) {
+    color: #9d9d9d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item_txt ul li span.money {
+    color: #191919;
+    font-weight: 800;
+    margin-right: 8px;
+}
+.item_txt ul li span.cancel {
+    color: #9d9d9d;
+    text-decoration: line-through;
+}
+
+/* title 시작 - 메인 안에 섹션별로 사용 */
+.title {
+    height: 46px;
+    border-top: 3px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: #070707;
+}
+/* title 끝 */
+
+/* special_picks */
+.special_picks {
+    margin-top: 50px;
+}
+.pick_menu {
+    border-top: 2px dotted #000;
+}
+.pick_menu ul {
+    display: flex;
+    justify-content: center;
+    border-top: 2px dotted #000;
+}
+.pick_menu ul li {
+    padding: 0 15px;
+}
+.pick_menu ul li a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.pick_menu ul li a:hover {
+    border-top: 4px solid #000;
+    position: relative;
+    top: -4px;
+    /* margin-top: -4px; < position 없어도 됨 */
+    color: #6c0075;
+}
+
+/* 삼각형 만들기 - 가상요소, 보더의 성질 이용 */
+.triangle::before {
+    content: "";
+    border-top: 5px solid #000;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.pick_menu ul li a:hover .triangle::before {
+    opacity: 1;
+}
+
+.pick_box {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.pick {
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.pick .pick_img {
+    padding: 15px 0;
+}
+.pick_icon {
+    width: 28px;
+    height: 16px;
+    background: url(../img/icons.png) no-repeat 0 0;
+    /* margin: 0 auto; */
+    display: inline-block;
+}
+.icon02 {
+    width: 48px;
+    background-position: -50px 0;
+}
+.icon04 {
+    background-position: -150px 0;
+}
+
+.magazine {
+    margin-top: 50px;
+}
+
+.brand_focus {
+    margin-top: 50px;
+}
+.brand_product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best_beauty {
+    margin-top: 50px;
 }
