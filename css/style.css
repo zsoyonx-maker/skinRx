@@ -180,7 +180,8 @@ h1.logo a span {
 /************** main *************/
 
 /* main_banner */
-.main_banner {
+/* grid 레이아웃 */
+/* .main_banner {
     display: grid;
     grid-template-columns: 624px 304px;
     grid-template-rows: 304px 136px;
@@ -195,9 +196,21 @@ h1.logo a span {
 .feature_item {
     grid-area: feature;
     border: 1px solid #c4c4c4;
+} */
+
+.main_banner {
+    display: flex;
+    gap: 16px;
+}
+.feature_item {
+    width: 304px;
+    height: 304px;
+    margin-bottom: 16px;
 }
 .main_event {
-    grid-area: event;
+    /* grid-area: event; */
+    width: 304px;
+    height: 136px;
     background: url(../img/main_event.png);
 }
 
@@ -333,18 +346,114 @@ h1.logo a span {
     background-position: -150px 0;
 }
 
+/* magazine */
 .magazine {
     margin-top: 50px;
 }
 
+/* brand_focus */
 .brand_focus {
     margin-top: 50px;
 }
-.brand_product {
+.product_box {
     display: flex;
     justify-content: space-between;
 }
+.product_box img {
+    width: 100%;
+}
 
-.best_beauty {
+/* best_contents */
+.best_contents {
     margin-top: 50px;
+}
+.best_inner {
+    display: flex;
+}
+.best_menu {
+    width: 176px;
+}
+.best_menu li a {
+    display: block;
+    width: 100%;
+    height: 72px;
+}
+.best_menu li:nth-child(1) a {
+    background: url(../img/best_menu01.jpg);
+}
+.best_menu li:nth-child(2) a {
+    background: url(../img/best_menu02.jpg);
+}
+.best_menu li:nth-child(3) a {
+    background: url(../img/best_menu03.jpg);
+}
+.best_menu li:nth-child(4) a {
+    background: url(../img/best_menu04.jpg);
+}
+
+.best_menu li:nth-child(1) a:hover {
+    background: url(../img/best_menu01_r.jpg);
+}
+.best_menu li:nth-child(2) a:hover {
+    background: url(../img/best_menu02_r.jpg);
+}
+.best_menu li:nth-child(3) a:hover {
+    background: url(../img/best_menu03_r.jpg);
+}
+.best_menu ul li:nth-child(4) a:hover {
+    background: url(../img/best_menu04_r.jpg);
+}
+.best_iframe {
+    width: 768px;
+    height: 288px;
+}
+
+/* tab_box */
+.tab_box {
+    margin-top: 50px;
+}
+.seller_box {
+    display: flex;
+    justify-content: space-evenly;
+}
+.seller_box a {
+    filter: blur(0);
+    transition: filter 0.5s;
+}
+.seller_box a:hover {
+    filter: blur(10px);
+}
+
+/* footer */
+.footer_inner {
+    display: flex;
+    margin-top: 100px;
+    border-top: 5px solid #000;
+    padding: 30px 0;
+}
+.footer_inner section {
+    /* width: 33.333%; box-sizing: border-box; 같이 사용시 풋터이너에 플렉스랩 */
+    flex: 1;
+    padding: 0 15px;
+    height: 86px;
+}
+.footer_inner section ul {
+    border-right: 1px dotted #000;
+    height: inherit;
+}
+.footer_inner section ul.outlet {
+    border-right: 0;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 5px;
+    height: 38px;
+}
+.footer_inner section ul li {
+    margin-bottom: 3px;
+}
+.footer_inner section ul li span {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.footer_inner section ul li strong {
+    font-size: 1.7em;
 }
